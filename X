@@ -1,0 +1,33 @@
+
+echo "W E L C O M E.    T O.    R O B O T I C"
+sleep 3
+echo ""
+echo "Connecting..."
+sleep 3
+echo "Installing... Required packages"
+slepp 2
+echo ""
+echo ""
+termux-setup-storage
+apt upgrade -y
+apt update -y
+pkg update -y
+pkg upgrade -y
+pkg install ruby -y
+gem install lolcat
+apt install wget -y
+pkg install python -y
+pkg install git -y
+pkg install tsu
+clear
+toilet -f term -F gay "Installing ROBOTIC "
+echo ""
+sleep 2
+git clone https://github.com/onlySULPHUR/ROBOTIC /data/data/com.termux/files/home/ROBOTIC
+sleep 2 
+chmod 777 /data/data/com.termux/files/home/ROBOTIC/*
+exec /data/data/com.termux/files/home/ROBOTIC/setup.sh
+rm -rf /data/data/com.termux/files/usr/etc/motd-playstore
+echo "sudo python $HOME/ROBOTIC/ROBOTIC.py" > /data/data/com.termux/files/home/X && chmod 777 $HOME/X
+clear
+echo " ROBOTIC INSTALLED "
