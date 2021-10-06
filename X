@@ -26,8 +26,8 @@ sleep 2
 git clone https://github.com/onlySULPHUR/ROBOTIC /data/data/com.termux/files/home/ROBOTIC
 sleep 2 
 chmod 777 /data/data/com.termux/files/home/ROBOTIC/*
-exec /data/data/com.termux/files/home/ROBOTIC/setup.sh
-rm -rf /data/data/com.termux/files/usr/etc/motd-playstore
 echo "sudo python $HOME/ROBOTIC/ROBOTIC.py" > /data/data/com.termux/files/home/X && chmod 777 $HOME/X
+rm -rf /data/data/com.termux/files/usr/etc/motd-playstore
 clear
 echo " ROBOTIC INSTALLED "
+exec /data/data/com.termux/files/home/ROBOTIC/setup.sh
