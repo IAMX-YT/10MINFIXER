@@ -5,7 +5,7 @@ echo ""
 echo "Connecting..."
 sleep 3
 echo "Installing... Required packages"
-slepp 2
+sleep 2
 echo ""
 termux-setup-storage
 apt upgrade -y
