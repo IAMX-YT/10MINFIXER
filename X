@@ -7,21 +7,37 @@ sleep 3
 echo "Installing... Required packages"
 slepp 2
 echo ""
-echo ""
 termux-setup-storage
-apt upgrade -y && apt update -y && pkg update -y && pkg upgrade -y
-clear && echo "30% Done"
+apt upgrade -y
+apt update -y
+pkg update -y
+pkg upgrade -y
+clear
+echo "30% Done"
 sleep 2
-apt install wget -y && pkg install python -y && pkg install git -y && pkg install tsu && pkg install ruby -y && pkg install toilet -y && gem install lolcat && clear && echo "70% Done" && sleep 2 && git clone https://github.com/onlySULPHUR/ROBOTIC && cd ROBOTIC && chmod +x *.sh
+apt install wget -y
+pkg install python -y
+pkg install git -y
+pkg install tsu
+pkg install ruby -y
+pkg install toilet -y
+gem install lolcat
+clear
+echo "70% Done"
+sleep 2
+git clone https://github.com/onlySULPHUR/ROBOTIC
+cd ROBOTIC
+chmod +x *.sh
 clear
 toilet -f term -F gay "Installing ROBOTIC "
 sleep 2 
 chmod 777 /data/data/com.termux/files/home/ROBOTIC/*
-echo "sudo python $HOME/ROBOTIC/ROBOTIC.py" > /data/data/com.termux/files/home/X && chmod 777 $HOME/X
+echo "sudo python $HOME/ROBOTIC/ROBOTIC.py" > /data/data/com.termux/files/home/X
+chmod 777 $HOME/X
 rm -rf /data/data/com.termux/files/usr/etc/motd-playstore
 clear
 echo " ROBOTIC INSTALLED "
 echo "100% Done "
 sleep 4
 clear
-exec /data/data/com.termux/files/home/ROBOTIC/setup.sh
+exec $HOME/ROBOTIC/setup.sh
