@@ -1,0 +1,12 @@
+{
+  "magisk": {
+    "version": "TG Channel : @XCHEATPRO",
+    "versionCode": "23000-XCHEAT",
+    "link": "https://cdn.jsdelivr.net/gh/topjohnwu/magisk-files@23.0/app-release.apk",
+    "note": "XCHEAT-Safe"
+  },
+  "stub": {
+    "versionCode": "21",
+    "link": "https://cdn.jsdelivr.net/gh/topjohnwu/magisk-files@23.0/stub-release.apk"
+  }
+}
